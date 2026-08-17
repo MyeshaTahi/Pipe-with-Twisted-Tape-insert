@@ -1,12 +1,25 @@
-# Pipe-with-Twisted-Tape-insert
-There is a pipe in which there is a twisted tape insert. Analyze the fluid flow through this pipe.
-# Twisted-Tape PTSC — Mesh
+# Twisted-Tape Solar Collector — Mesh
 
-Mesh for the twisted-tape parabolic trough solar collector (PTSC) CFD project.
+Mesh for the Solar Collector Heat absorber tube with twisted-tape insert, built in ANSYS Meshing (2026 R1 Student), Fluid Flow (Fluent) system.
 
-| Metric | Value |
+## Methods
+
+- Patch Conforming Method
+- Inflation (prism boundary layers for near-wall resolution)
+- Sheet Body Method: Quad Dominant
+- Sweepable Body Method: Sweep
+
+## Sizing & Quality
+
+| Setting | Value |
 |---|---|
-| Nodes | 123,292 |
-| Elements | 354,739 |
-| Method | Patch Conforming + Inflation |
-| Software | ANSYS 2026 R1 (Student) — Fluent |
+| Element size | 2.5 × 10⁻³ m (2.5 mm) |
+| Target skewness | 0.9 (default) |
+| Smoothing | High |
+
+## Statistics
+
+| Metric | Count |
+|---|---|
+| Nodes | 244,644 |
+| Elements | 704,956 |
